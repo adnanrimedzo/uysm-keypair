@@ -53,10 +53,6 @@ public class Client {
                 FileOperations.writeLines(outPath, lines);
             }
 
-
-            if (arguments.isEmpty())
-                throw new CmdLineException(parser, "No argument is given");
-
         } catch (CmdLineException e) {
             System.err.println(e.getMessage());
             System.err.println("java SampleMain [options...] arguments...");
